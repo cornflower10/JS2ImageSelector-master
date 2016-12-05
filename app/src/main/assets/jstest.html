@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html40/strict.dtd">
+<HTML>
+<HEAD>
+<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi" />
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+   function androidCallJS(name){
+      alert("图片地址"+name.path);
+      document.getElementById("image").src=""+name.path;
+
+   }
+    function testJsCallAndroid(){
+
+      JsTest.JsCallAndroid();
+   }
+   
+</script>
+</HEAD>
+<BODY>
+<span>测试js使用</span>
+
+<button id='btntest' onclick='testJsCallAndroid()'>选择图片</button>
+
+<div>
+<img src="" id="image" width="30px" height="40px">
+</div>
+</BODY>
+</HTML>
